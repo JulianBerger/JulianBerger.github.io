@@ -33,6 +33,10 @@
   </url>
   
   <url>
+    <loc>https://julianberger.me/about/</loc>
+  </url>
+  
+  <url>
     <loc>https://julianberger.me/categories/</loc>
     <priority>0</priority>
   </url>
