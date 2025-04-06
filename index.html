@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<meta name="generator" content="Hugo 0.80.0" />
+	<meta name="generator" content="Hugo 0.145.0">
   <title>Home - https://julianberger.me/</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
@@ -32,16 +32,9 @@
         
         
         <li>
-          <a class="navlink  active"
+          <a class="navlink "
             data-hotkey="h" aria-label="Go Home" href="/">
             <span>Home</span>
-          </a>
-        </li>
-        
-        <li>
-          <a class="navlink "
-            data-hotkey="h" aria-label="About Me" href="/about/">
-            <span>About</span>
           </a>
         </li>
         
@@ -55,47 +48,50 @@
       </ul>
     </div>
   </nav>
-  <div class="header">
-    
-    <nav role="navigation">
-      <ul id="fixedNav" class="" role="navigation">
-        
-        
-        <li>
-          <a class="navlink  active"
-            data-hotkey="h" aria-label="Go Home" href="/">
-            <span>Home</span>
-          </a>
-        </li>
-        
-        <li>
-          <a class="navlink "
-            data-hotkey="h" aria-label="About Me" href="/about/">
-            <span>About</span>
-          </a>
-        </li>
-        
-        <li>
-          <a class="navlink "
-            data-hotkey="h" aria-label="Contact me" href="/contact/">
-            <span>Contact</span>
-          </a>
-        </li>
-        
-      </ul>
-      <a class="txt-btn hide" id='fullscreenNavBtn' onclick="toggleFullscreenNav()"><i class="fa fa-bars"></i></a>
-    </nav>
+
+
+<div class="content fadein-2s cv">
+  <div class="mail-bg">
+    <a href="mailto:hi@julianberger.me"
+      >hi@julianberger.me</a
+    >
   </div>
 
-  <div class="content fadein-2s">
-    
-      <h2 id="-hi-im-julian-berger">👋 Hi! I&rsquo;m Julian Berger&hellip;</h2>
-<h4 id="-a-fullstack-developer-from-berlin-germany-">&hellip; a fullstack Developer from Berlin, Germany 🇩🇪</h4>
+   <figure class="avatar-round"><img src="/julian-berger.webp"
+    alt="Avatar">
+</figure>
 
-    
-  </div>
+<h2 id="julian-berger">Julian Berger</h2>
+<p>I&rsquo;m a developer and designer with a passion for building thoughtful, well-designed products and experiences. Whether it&rsquo;s through apps, visual storytelling, or anything in between, I aim to create work that’s both functional and visually compelling.</p>
+<h3 id="work">Work</h3>
 
-  <footer class="footer">
+<div class="small-project">
+  <a class="small-project-info" href="https://pinny.co">
+    <h3 class="title">Pinny.co</h3>
+    <aside>
+      <time datetime="2024-10-01 00:00:00 &#43;0000 &#43;0000"
+        >Oct 2024 - Present</time
+      >
+    </aside>
+  </a>
+</div>
+
+<div class="small-project">
+  <a class="small-project-info" href="https://framebird.io">
+    <h3 class="title">Framebird.io</h3>
+    <aside>
+      <time datetime="2023-06-01 00:00:00 &#43;0000 &#43;0000"
+        >Jun 2023 - Present</time
+      >
+    </aside>
+  </a>
+</div>
+
+
+ 
+</div>
+
+<footer class="footer">
   <div class="container">
     <div class="footer-social">
       <a class="social-icon" target="_blank" href="https://github.com/JulianBerger/">
@@ -110,13 +106,16 @@
     </div>
     <div class="footer-copyright">
       <span>
-        Copyright © 2018-2021
+        Copyright © 2018-<span id="current-year">2025</span>
       </span>
     </div>
   </div>
 </footer>
 
 <script type="text/javascript" src="/js/nav.js"></script>
+<script type="text/javascript">
+  document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
 
   <script type="text/javascript" src=""></script>
 

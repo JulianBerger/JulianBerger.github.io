@@ -39,13 +39,6 @@
         
         <li>
           <a class="navlink "
-            data-hotkey="h" aria-label="About Me" href="/about/">
-            <span>About</span>
-          </a>
-        </li>
-        
-        <li>
-          <a class="navlink "
             data-hotkey="h" aria-label="Contact me" href="/contact/">
             <span>Contact</span>
           </a>
@@ -54,37 +47,7 @@
       </ul>
     </div>
   </nav>
-  <div class="header">
-    
-    <nav role="navigation">
-      <ul id="fixedNav" class="" role="navigation">
-        
-        
-        <li>
-          <a class="navlink "
-            data-hotkey="h" aria-label="Go Home" href="/">
-            <span>Home</span>
-          </a>
-        </li>
-        
-        <li>
-          <a class="navlink "
-            data-hotkey="h" aria-label="About Me" href="/about/">
-            <span>About</span>
-          </a>
-        </li>
-        
-        <li>
-          <a class="navlink "
-            data-hotkey="h" aria-label="Contact me" href="/contact/">
-            <span>Contact</span>
-          </a>
-        </li>
-        
-      </ul>
-      <a class="txt-btn hide" id='fullscreenNavBtn' onclick="toggleFullscreenNav()"><i class="fa fa-bars"></i></a>
-    </nav>
-  </div>
+
 
 <div class="content">
   <h2 id="latest-projects">Latest projects</h2>
@@ -93,55 +56,28 @@
   <ul class="project-list">
     
     <li>
-      <a href="https://julianberger.me/projects/geoist.app/">
-        <h3>Geoist</h3>
-        <div class="item" style="background-image: url('/projects/geoist.png')">
-        </div>
+      <a href="https://pinny.co">
+        <h3>Pinny.co</h3>
+        <div
+          class="item"
+          style="background-image: url('/projects/pinny.png')"
+        ></div>
       </a>
-      <div class="post-header">
-        
-      </div>
-
+      <div class="post-header"></div>
     </li>
     
     <li>
-      <a href="https://julianberger.me/projects/shutter.cc/">
-        <h3>Shutter.cc</h3>
-        <div class="item" style="background-image: url('/projects/shuttercc.png')">
-        </div>
+      <a href="https://framebird.io">
+        <h3>Framebird.io</h3>
+        <div
+          class="item"
+          style="background-image: url('/projects/framebird.png')"
+        ></div>
       </a>
-      <div class="post-header">
-        
-      </div>
-
-    </li>
-    
-    <li>
-      <a href="https://julianberger.me/projects/coffeemonkey/">
-        <h3>Coffeemonkey.de</h3>
-        <div class="item" style="background-image: url('/projects/coffeemonkey.png')">
-        </div>
-      </a>
-      <div class="post-header">
-        
-      </div>
-
-    </li>
-    
-    <li>
-      <a href="https://julianberger.me/projects/skygarage/">
-        <h3>Skygarage.de</h3>
-        <div class="item" style="background-image: url('/projects/skygarage.jpg')">
-        </div>
-      </a>
-      <div class="post-header">
-        
-      </div>
-
+      <div class="post-header"></div>
     </li>
     
   </ul>
-
 </div>
 
 <footer class="footer">
@@ -159,13 +95,16 @@
     </div>
     <div class="footer-copyright">
       <span>
-        Copyright © 2018-2021
+        Copyright © 2018-<span id="current-year">2025</span>
       </span>
     </div>
   </div>
 </footer>
 
 <script type="text/javascript" src="/js/nav.js"></script>
+<script type="text/javascript">
+  document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
 
   <script type="text/javascript" src=""></script>
 
